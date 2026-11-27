@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Наука в кармане</title>
+
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div id="loader"><div class="spin" aria-hidden="true"></div><div id="loadmsg">Загружаем науку…</div></div>
+<header>
+ <h1>🔬 Наука в кармане</h1>
+ <span class="chip" id="hd-streak" title="Дней подряд">🔥 0</span>
+ <span class="chip" id="hd-lvl" title="Уровень и очки">⭐ 0</span>
+</header>
+<main>
+ <section id="v-home" class="view active" aria-label="Главная"></section>
+ <section id="v-phys" class="view" aria-label="Физика"></section>
+ <section id="v-chem" class="view" aria-label="Химия"></section>
+ <section id="v-tasks" class="view" aria-label="Задания"></section>
+ <section id="v-prof" class="view" aria-label="Профиль"></section>
+</main>
+<nav class="nav" id="mainnav" aria-label="Основная навигация">
+ <button data-v="home" aria-current="page"><span class="ic">🏠</span>Главная</button>
+ <button data-v="phys"><span class="ic">⚡</span>Физика</button>
+ <button data-v="chem"><span class="ic">🧪</span>Химия</button>
+ <button data-v="tasks"><span class="ic">🎯</span>Задания</button>
+ <button data-v="prof"><span class="ic">👤</span>Профиль</button>
+</nav>
+<div id="toast" role="status" aria-live="polite"></div>
+
+<script src="js/data.js"></script>
+<script src="js/scenes.js"></script>
+<script src="js/chem.js"></script>
+<script src="js/phys.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
